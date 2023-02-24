@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class FormyForm {
     public static void main(String[] args) {
@@ -38,6 +39,11 @@ public class FormyForm {
         jenisKelamin.click();
         System.out.println("jenis kelamin button clicked");
 
+        //select-menu job experience
+        WebElement jobExperience =driver.findElement(By.id("select-menu"));
+        Select select = new Select(jobExperience);
+        select.selectByValue("1");
+        System.out.println("Job experience selected");
 
         //isi tanggal mulai kerja
         WebElement startDate = driver.findElement(By.id("datepicker"));
