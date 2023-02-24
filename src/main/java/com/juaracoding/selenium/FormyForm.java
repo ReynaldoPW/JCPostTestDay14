@@ -29,14 +29,15 @@ public class FormyForm {
         System.out.println("print job title");
 
         //pilih level pendidikan
-        WebElement educationLevel = driver.findElement(By.id("radio-button-3"));
+        WebElement educationLevel = driver.findElement(By.id("radio-button-2"));
         educationLevel.click();
         System.out.println("eduction button clicked ");
 
-        //pilih pengalaman kerja
-        WebElement jobExperience = driver.findElement(By.id("checkbox-1"));
-        jobExperience.click();
-        System.out.println("job experience clicked");
+        //pilih Jenis Kelamin
+        WebElement jenisKelamin = driver.findElement(By.id("checkbox-1"));
+        jenisKelamin.click();
+        System.out.println("jenis kelamin button clicked");
+
 
         //isi tanggal mulai kerja
         WebElement startDate = driver.findElement(By.id("datepicker"));
