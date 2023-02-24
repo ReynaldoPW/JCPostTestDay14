@@ -37,7 +37,7 @@ public class FormyForm {
         //pilih Jenis Kelamin
         WebElement jenisKelamin = driver.findElement(By.id("checkbox-1"));
         jenisKelamin.click();
-        System.out.println("jenis kelamin button clicked");
+        System.out.println("jenis kelamin checkbox clicked");
 
         //select-menu job experience
         WebElement jobExperience =driver.findElement(By.id("select-menu"));
